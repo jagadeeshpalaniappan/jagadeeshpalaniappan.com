@@ -331,7 +331,10 @@ const Hero = ({ intro }) => {
             <p>{intro.line2}</p>
             <p>
               Want to know how I may help your project? Check out my{" "}
-              <a className="text-info" href="resume.html">
+              <a
+                className="text-info"
+                href="https://raw.githubusercontent.com/jagadeeshpalaniappan/jagadeeshpalaniappan.github.io/master/jagadeesh-palaniappan-fullstack-dev.pdf"
+              >
                 resume
               </a>
               .
