@@ -260,3 +260,9 @@ TestimonialCarousel
 .btn-info {
   background-color: #2a5788;
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: #2a5788;
+  opacity: 1;
+}
