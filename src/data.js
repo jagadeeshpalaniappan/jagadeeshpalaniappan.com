@@ -15,6 +15,13 @@ const navbarLinks = [
     iconClassName: "fas fa-cloud-download-alt fa-2x"
   },
   {
+    name: "Slides",
+    isExternalUrl: true,
+    srcUrl: "/intro",
+    iconClassName: "fas fa-rocket fa-2x",
+    iconOnly: true
+  },
+  {
     name: "LinkedIn",
     isExternalUrl: true,
     srcUrl: "https://www.linkedin.com/in/jagadeeshpalaniappan/",
@@ -56,16 +63,15 @@ const intro = {
   ],
   line1: (
     <>
-      I’m a Full-Stack developer and have more than{" "}
-      <b>{getAge(new Date(2011, 8, 30))} years</b> of experience in building
-      highly scalable web applications.
+      I’m a Full-Stack developer and have more than <b>{getAge(new Date(2011, 8, 30))} years</b> of
+      experience in building highly scalable web applications.
     </>
   ),
   line2: (
     <>
-      I’m a great team player and also single-handedly developed applications,
-      starting from scratch - designing, developing (<b>Front-End</b> and{" "}
-      <b>Back-End</b>) applications, building and deploying them on cloud.
+      I’m a great team player and also single-handedly developed applications, starting from scratch
+      - designing, developing (<b>Front-End</b> and <b>Back-End</b>) applications, building and
+      deploying them on cloud.
     </>
   )
 };
@@ -188,8 +194,7 @@ const testimonials = [
     name: "Santhosh Muktha",
     designation: "Principal Engineer",
     company: "Oracle",
-    avatarUrl:
-      "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    avatarUrl: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
     linkedInUrl: "",
     width: "700px",
     description:
@@ -300,8 +305,7 @@ const devSkills = [
     keywords: [
       {
         label: "MEAN Stack ",
-        tooltip:
-          "Experience with MEAN Stack (MongoDB, Express, Node.js, Angular.js, Node.js)",
+        tooltip: "Experience with MEAN Stack (MongoDB, Express, Node.js, Angular.js, Node.js)",
         highlight: true
       },
       {
@@ -336,8 +340,7 @@ const devSkills = [
       },
       {
         label: "RESTful API",
-        tooltip:
-          "Experience with Building and Consuming a RESTful API endpoints using Spring",
+        tooltip: "Experience with Building and Consuming a RESTful API endpoints using Spring",
         highlight: true
       }
     ]
@@ -382,14 +385,12 @@ const devSkills = [
       },
       {
         label: "RESTful API",
-        tooltip:
-          "Experience with Building and Consuming a RESTful API endpoints using Spring",
+        tooltip: "Experience with Building and Consuming a RESTful API endpoints using Spring",
         highlight: true
       },
       {
         label: "SOAP API",
-        tooltip:
-          "Experience with Building and Consuming SOAP API endpoints using Spring"
+        tooltip: "Experience with Building and Consuming SOAP API endpoints using Spring"
       },
       {
         label: "Webservices",
@@ -595,12 +596,10 @@ const skills = {
 const leadershipSkills = {
   scrumMaster: [
     {
-      label:
-        "Keeping all team members on track and clearing their blockers and other dependencies"
+      label: "Keeping all team members on track and clearing their blockers and other dependencies"
     },
     {
-      label:
-        "Actively monitoring the userstories, defects and clearing the backlogs."
+      label: "Actively monitoring the userstories, defects and clearing the backlogs."
     },
     {
       label:
@@ -656,45 +655,38 @@ const leadershipSkills = {
 
 const achievementsGallery = [
   {
-    src:
-      "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/4.jpg",
+    src: "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/4.jpg",
     width: 4,
     height: 4
   },
   {
-    src:
-      "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/1.jpg",
+    src: "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/1.jpg",
     width: 4,
     height: 3
   },
   {
-    src:
-      "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/6.jpg",
+    src: "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/6.jpg",
     width: 3,
     height: 2
   },
 
   {
-    src:
-      "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/3.jpg",
+    src: "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/3.jpg",
     width: 4,
     height: 3
   },
   {
-    src:
-      "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/7.jpg",
+    src: "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/7.jpg",
     width: 4,
     height: 3
   },
   {
-    src:
-      "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/2.jpg",
+    src: "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/2.jpg",
     width: 4,
     height: 3
   },
   {
-    src:
-      "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/5.jpg",
+    src: "http://jagadeeshpalaniappan.github.io/assets/img/jag/professional/5.jpg",
     width: 4,
     height: 2
   }
