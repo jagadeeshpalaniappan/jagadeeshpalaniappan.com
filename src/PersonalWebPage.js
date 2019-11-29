@@ -48,12 +48,9 @@ function HireRequest() {
           src="http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg"
           alt=""
         />
-        <h3 className="text-center mb-2">
-          Interested in hiring me for your project?
-        </h3>
+        <h3 className="text-center mb-2">Interested in hiring me for your project?</h3>
         <small>
-          Looking for an experienced full-stack developer to build your web
-          application?
+          Looking for an experienced full-stack developer to build your web application?
         </small>
         <div className="text-center">
           <Button color="info" href="tel:+14085335628">
@@ -86,9 +83,7 @@ function TestimonialCard({ testimonial }) {
               </div>
               <div className="col d-flex flex-column p-0 py-2">
                 <strong className="mb-1">{testimonial.name}</strong>
-                <small className="mb-0 text-muted">
-                  {testimonial.designation}
-                </small>
+                <small className="mb-0 text-muted">{testimonial.designation}</small>
                 <small className="mb-0 text-muted">{testimonial.company}</small>
               </div>
             </div>
@@ -196,6 +191,7 @@ function SkillsContainer() {
             </Row>
           </CardBody>
         </Card>
+        {/* 
         <h5>Leadership Skills</h5>
         <Card>
           <CardBody>
@@ -221,6 +217,7 @@ function SkillsContainer() {
             </ul>
           </CardBody>
         </Card>
+         */}
       </div>
     </section>
   );
@@ -284,9 +281,7 @@ function AchievementsContainer() {
   return (
     <section className="skills-section section mt-5">
       <div className="container-fluid">
-        <h2 className="section-title text-center mb-3">
-          Awards & Achievements
-        </h2>
+        <h2 className="section-title text-center mb-3">Awards & Achievements</h2>
         <Card className="p-3">
           <CardBody>
             <div className="tm-container">
@@ -310,9 +305,7 @@ class PageHeader extends React.Component {
       <div
         className={
           "overlay-bg overlay-header " +
-          (this.props.size !== undefined
-            ? "overlay-header-" + this.props.size
-            : "")
+          (this.props.size !== undefined ? "overlay-header-" + this.props.size : "")
         }
       >
         {this.props.content}
@@ -529,11 +522,7 @@ class AppHeader extends React.Component {
             <span className="navbar-toggler-bar navbar-kebab" />
             <span className="navbar-toggler-bar navbar-kebab" />
           </NavbarToggler>
-          <Collapse
-            isOpen={this.state.isOpen}
-            navbar
-            className="justify-content-end"
-          >
+          <Collapse isOpen={this.state.isOpen} navbar className="justify-content-end">
             <Nav navbar>
               {navbarLinks.map(link => (
                 <NavItem>
@@ -543,14 +532,10 @@ class AppHeader extends React.Component {
                     target={link.isExternalUrl ? "_blank" : "_self"}
                   >
                     <i className={"align-middle " + link.iconClassName} />{" "}
-                    {!link.iconOnly && (
-                      <span className="ml-1">{link.name}</span>
-                    )}
+                    {!link.iconOnly && <span className="ml-1">{link.name}</span>}
                     {link.iconOnly && (
                       <p>
-                        <span className="d-lg-none d-md-block ml-1">
-                          {link.name}
-                        </span>
+                        <span className="d-lg-none d-md-block ml-1">{link.name}</span>
                       </p>
                     )}
                   </a>
