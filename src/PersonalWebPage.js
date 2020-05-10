@@ -19,7 +19,7 @@ import {
   NavbarToggler,
   Collapse,
   Nav,
-  NavItem
+  NavItem,
 } from "reactstrap";
 
 // import AppHeader from "./AppHeader";
@@ -34,7 +34,7 @@ import {
   leadershipSkills,
   achievements,
   achievementsGallery,
-  testimonials
+  testimonials,
 } from "./data";
 
 // TODO: Split into multiple files (VERY-HARD-TO-MAINTAIN)
@@ -51,15 +51,11 @@ function HireRequest() {
           alt=""
         />
         <h5 className="text-center mb-2">
-<<<<<<< HEAD
           Do you have interesting thoughts / ideas / vision to building app?
-=======
-          If you have interesting thoughts / ideas / vision to building app?
->>>>>>> d065280993b67a98e7f3f668e140a3f7f4f0d563
         </h5>
         <small>
-          Looking for an experienced full-stack developer to build your web / mobile / desktop
-          application?
+          Looking for an experienced full-stack developer to build your web /
+          mobile / desktop application?
         </small>
         <div className="text-center">
           <Button color="info" href="tel:+14085335628">
@@ -91,8 +87,12 @@ function TestimonialCard({ testimonial }) {
                 />
                 <div class="d-flex flex-column p-0 py-2">
                   <p className="mb-1">{testimonial.name}</p>
-                  <small className="mb-0 text-muted">{testimonial.designation}</small>
-                  <small className="mb-0 text-muted">{testimonial.company}</small>
+                  <small className="mb-0 text-muted">
+                    {testimonial.designation}
+                  </small>
+                  <small className="mb-0 text-muted">
+                    {testimonial.company}
+                  </small>
                 </div>
               </div>
               <div>
@@ -101,7 +101,8 @@ function TestimonialCard({ testimonial }) {
                   target="_blank"
                   className="text-info"
                 >
-                  View on LinkedIn <i class="fas fa-external-link-alt text-info" />
+                  View on LinkedIn{" "}
+                  <i class="fas fa-external-link-alt text-info" />
                 </a>
               </div>
             </div>
@@ -126,24 +127,24 @@ function TestimonialCarousel() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToScroll: 1,
-          variableWidth: false
-        }
+          variableWidth: false,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToScroll: 1,
-          variableWidth: false
-        }
-      }
-    ]
+          variableWidth: false,
+        },
+      },
+    ],
   };
 
   return (
@@ -151,7 +152,7 @@ function TestimonialCarousel() {
       <div className="container-fluid">
         <h2 className="section-title text-center mb-3">Testimonials</h2>
         <Slider {...settings} className="mb-5">
-          {testimonials.map(testimonial => (
+          {testimonials.map((testimonial) => (
             <TestimonialCard testimonial={testimonial} />
           ))}
         </Slider>
@@ -165,12 +166,12 @@ function TestimonialCarousel() {
 function Skills({ skills }) {
   return (
     <>
-      {skills.map(skill => (
+      {skills.map((skill) => (
         <>
           <p className="my-1">{skill.title}</p>
 
           <div>
-            {skill.keywords.map(keyword => (
+            {skill.keywords.map((keyword) => (
               <Button
                 // color={keyword.highlight ? "info" : "default"}
                 type="button"
@@ -265,10 +266,10 @@ function AchievementsGallery() {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={achievementsGallery.map(x => ({
+              views={achievementsGallery.map((x) => ({
                 ...x,
                 srcset: x.srcSet,
-                caption: x.title
+                caption: x.title,
               }))}
             />
           </Modal>
@@ -299,11 +300,13 @@ function AchievementsContainer() {
   return (
     <section className="skills-section section mt-5">
       <div className="container-fluid">
-        <h2 className="section-title text-center mb-3">Awards & Achievements</h2>
+        <h2 className="section-title text-center mb-3">
+          Awards & Achievements
+        </h2>
         <Card className="p-3">
           <CardBody>
             <div className="tm-container">
-              {achievements.map(achievement => (
+              {achievements.map((achievement) => (
                 <Achievement achievement={achievement} />
               ))}
             </div>
@@ -323,7 +326,9 @@ class PageHeader extends React.Component {
       <div
         className={
           "overlay-bg overlay-header " +
-          (this.props.size !== undefined ? "overlay-header-" + this.props.size : "")
+          (this.props.size !== undefined
+            ? "overlay-header-" + this.props.size
+            : "")
         }
       >
         {this.props.content}
@@ -360,7 +365,7 @@ const Hero = ({ intro }) => {
               .
             </p>
           </div>
-          {intro.keywords.map(keyword => (
+          {intro.keywords.map((keyword) => (
             <Badge pill color="secondary mr-2">
               {keyword}
             </Badge>
@@ -402,7 +407,7 @@ const TimelineItem = ({ item }) => {
         )}
         {item.keywords && (
           <p className="mb-1">
-            {item.keywords.map(skill => (
+            {item.keywords.map((skill) => (
               <Badge pill color="secondary" className="mr-1">
                 {skill}
               </Badge>
@@ -417,7 +422,7 @@ const TimelineItem = ({ item }) => {
 const Timeline = ({ items }) => {
   return (
     <div className="tm-container">
-      {items.map(item => (
+      {items.map((item) => (
         <TimelineItem item={item} />
       ))}
     </div>
@@ -487,21 +492,21 @@ class AppHeader extends React.Component {
   state = {
     isOpen: false,
     dropdownOpen: false,
-    color: "transparent"
+    color: "transparent",
   };
   sidebarToggle = React.createRef();
   toggle = () => {
     if (this.state.isOpen) {
       this.setState({
-        color: "transparent"
+        color: "transparent",
       });
     } else {
       this.setState({
-        color: "white"
+        color: "white",
       });
     }
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   };
 
@@ -509,11 +514,11 @@ class AppHeader extends React.Component {
   updateColor = () => {
     if (window.innerWidth < 993 && this.state.isOpen) {
       this.setState({
-        color: "white"
+        color: "white",
       });
     } else {
       this.setState({
-        color: "transparent"
+        color: "transparent",
       });
     }
   };
@@ -540,9 +545,13 @@ class AppHeader extends React.Component {
             <span className="navbar-toggler-bar navbar-kebab" />
             <span className="navbar-toggler-bar navbar-kebab" />
           </NavbarToggler>
-          <Collapse isOpen={this.state.isOpen} navbar className="justify-content-end">
+          <Collapse
+            isOpen={this.state.isOpen}
+            navbar
+            className="justify-content-end"
+          >
             <Nav navbar>
-              {navbarLinks.map(link => (
+              {navbarLinks.map((link) => (
                 <NavItem>
                   <a
                     href={link.srcUrl}
@@ -550,10 +559,14 @@ class AppHeader extends React.Component {
                     target={link.isExternalUrl ? "_blank" : "_self"}
                   >
                     <i className={"align-middle " + link.iconClassName} />{" "}
-                    {!link.iconOnly && <span className="ml-1">{link.name}</span>}
+                    {!link.iconOnly && (
+                      <span className="ml-1">{link.name}</span>
+                    )}
                     {link.iconOnly && (
                       <p>
-                        <span className="d-lg-none d-md-block ml-1">{link.name}</span>
+                        <span className="d-lg-none d-md-block ml-1">
+                          {link.name}
+                        </span>
                       </p>
                     )}
                   </a>
