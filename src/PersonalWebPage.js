@@ -97,7 +97,7 @@ function TestimonialCard({ testimonial }) {
                   target="_blank"
                   className="text-info"
                 >
-                  View on LinkedIn <i class="fas fa-external-link-alt text-info" />
+                  View in LinkedIn <i class="fas fa-external-link-alt text-info" />
                 </a>
               </div>
             </div>
