@@ -78,18 +78,27 @@ function TestimonialCard({ testimonial }) {
             <p>{testimonial.description}</p>
           </CardBody>
           <CardFooter>
-            <div className="row">
-              <div className="col-auto">
+            <div class="align-items-end d-flex">
+              <div class="align-items-center d-flex flex-grow-1">
                 <img
-                  className="testimony-user-mini mx-auto rounded-circle"
+                  class="mr-3 rounded-circle testimony-user-mini"
                   src={testimonial.avatarUrl}
                   alt=""
                 />
+                <div class="d-flex flex-column p-0 py-2">
+                  <p className="mb-1">{testimonial.name}</p>
+                  <small className="mb-0 text-muted">{testimonial.designation}</small>
+                  <small className="mb-0 text-muted">{testimonial.company}</small>
+                </div>
               </div>
-              <div className="col d-flex flex-column p-0 py-2">
-                <strong className="mb-1">{testimonial.name}</strong>
-                <small className="mb-0 text-muted">{testimonial.designation}</small>
-                <small className="mb-0 text-muted">{testimonial.company}</small>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/jagadeeshpalaniappan"
+                  target="_blank"
+                  className="text-info"
+                >
+                  View on LinkedIn <i class="fas fa-external-link-alt text-info" />
+                </a>
               </div>
             </div>
           </CardFooter>

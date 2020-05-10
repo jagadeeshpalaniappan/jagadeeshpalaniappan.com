@@ -101,12 +101,12 @@ const workExp = {
   items: [
     {
       title: "Staff Software Engineer",
-      description: "GE Digital, San Ramon",
+      description: "GE Digital, San Ramon, California",
       year: { start: "2016", end: "Current" }
     },
     {
       title: "Senior Software Engineer",
-      description: "Cisco, San Jose",
+      description: "Cisco, San Jose, California",
       year: { start: "2015", end: "2016" }
     },
     {
