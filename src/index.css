@@ -210,9 +210,27 @@ TestimonialCarousel
 }
 
 @media screen and (max-width: 768px) {
-  .slick-slide .testimonial-item .card-body {
-    min-height: 400px;
+  .slick-slide .testimonial-item .card {
+    max-height: 300px;
+    min-height: 300px;
   }
+  .slick-slide .testimonial-item .card-footer {
+    font-size: 0.7rem;
+    padding: 0 0.6rem;
+  }
+  .slick-slide .testimonial-item .card-body {
+    height: 226px;
+    padding: 0.6rem;
+  }
+}
+
+.slick-slide .testimonial-item .card-body .testimonial-item-desc {
+  text-overflow: ellipsis;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  /* width: 100%; */
+  margin: 0;
 }
 
 .avatar-mini {
