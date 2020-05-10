@@ -10,12 +10,7 @@
 
 .tm-container:before {
   background: #eaeaea; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #eaeaea 1%,
-    #eaeaea 75%,
-    #ffffff 100%
-  ); /* FF3.6+ */
+  background: -moz-linear-gradient(top, #eaeaea 1%, #eaeaea 75%, #ffffff 100%); /* FF3.6+ */
   background: -webkit-gradient(
     linear,
     left top,
@@ -30,24 +25,9 @@
     #eaeaea 75%,
     #ffffff 100%
   ); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(
-    top,
-    #eaeaea 1%,
-    #eaeaea 75%,
-    #ffffff 100%
-  ); /* Opera 11.10+ */
-  background: -ms-linear-gradient(
-    top,
-    #eaeaea 1%,
-    #eaeaea 75%,
-    #ffffff 100%
-  ); /* IE10+ */
-  background: linear-gradient(
-    to bottom,
-    #eaeaea 1%,
-    #eaeaea 75%,
-    #ffffff 100%
-  ); /* W3C */
+  background: -o-linear-gradient(top, #eaeaea 1%, #eaeaea 75%, #ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #eaeaea 1%, #eaeaea 75%, #ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #eaeaea 1%, #eaeaea 75%, #ffffff 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
   bottom: 0;
   content: "";
@@ -225,7 +205,8 @@ TestimonialCarousel
 }
 
 .slick-slide .testimonial-item .card-body {
-  min-height: 140px;
+  height: 140px;
+  font-size: 0.6rem;
 }
 
 @media screen and (max-width: 768px) {

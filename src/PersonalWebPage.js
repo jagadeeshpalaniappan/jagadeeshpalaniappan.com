@@ -37,6 +37,8 @@ import {
   testimonials
 } from "./data";
 
+// TODO: Split into multiple files (VERY-HARD-TO-MAINTAIN)
+
 /************************* HireRequest ******************************/
 
 function HireRequest() {
@@ -48,9 +50,12 @@ function HireRequest() {
           src="http://jagadeeshpalaniappan.github.io/assets/img/jag/hero1.jpg"
           alt=""
         />
-        <h3 className="text-center mb-2">Interested in hiring me for your project?</h3>
+        <h5 className="text-center mb-2">
+          Do you have interesting thoughts / ideas / vision to building app?
+        </h5>
         <small>
-          Looking for an experienced full-stack developer to build your web application?
+          Looking for an experienced full-stack developer to build your web / mobile / desktop
+          application?
         </small>
         <div className="text-center">
           <Button color="info" href="tel:+14085335628">
@@ -101,7 +106,7 @@ function TestimonialCarousel() {
     centerMode: true,
     infinite: true,
     centerPadding: "60px",
-    // slidesToShow: 2,
+    slidesToShow: 2,
     initialSlide: 1,
     speed: 500,
     responsive: [
