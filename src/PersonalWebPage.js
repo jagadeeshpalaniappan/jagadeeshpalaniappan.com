@@ -51,7 +51,11 @@ function HireRequest() {
           alt=""
         />
         <h5 className="text-center mb-2">
+<<<<<<< HEAD
           Do you have interesting thoughts / ideas / vision to building app?
+=======
+          If you have interesting thoughts / ideas / vision to building app?
+>>>>>>> d065280993b67a98e7f3f668e140a3f7f4f0d563
         </h5>
         <small>
           Looking for an experienced full-stack developer to build your web / mobile / desktop
