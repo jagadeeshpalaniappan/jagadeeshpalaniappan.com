@@ -51,7 +51,7 @@ function HireRequest() {
           alt=""
         />
         <h5 className="text-center mb-2">
-          Do you have interesting thoughts / ideas / vision to building app?
+          Do you have an interesting idea, thought, vision to building app?
         </h5>
         <small>
           Looking for an experienced full-stack developer to build your web /
@@ -75,7 +75,7 @@ function TestimonialCard({ testimonial }) {
       <div className="testimonial-item">
         <Card>
           <CardBody>
-            <p>{testimonial.description}</p>
+            <p className="testimonial-item-desc">{testimonial.description}</p>
           </CardBody>
           <CardFooter>
             <div class="align-items-end d-flex">
@@ -95,13 +95,13 @@ function TestimonialCard({ testimonial }) {
                   </small>
                 </div>
               </div>
-              <div>
+              <div className="d-md-block d-none">
                 <a
                   href="https://www.linkedin.com/in/jagadeeshpalaniappan"
                   target="_blank"
                   className="text-info"
                 >
-                  View on LinkedIn{" "}
+                  View in LinkedIn{" "}
                   <i class="fas fa-external-link-alt text-info" />
                 </a>
               </div>
@@ -127,21 +127,24 @@ function TestimonialCarousel() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToScroll: 1,
+          // slidesToScroll: 1,
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToScroll: 1,
-          variableWidth: false,
+          slidesToShow: 1,
+          // variableWidth: false
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToScroll: 1,
-          variableWidth: false,
+          slidesToShow: 1,
+          // variableWidth: false
         },
       },
     ],
