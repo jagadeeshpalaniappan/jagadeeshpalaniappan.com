@@ -51,7 +51,7 @@ function HireRequest() {
           alt=""
         />
         <h5 className="text-center mb-2">
-          Do you have an interesting idea, thought, vision to building app?
+          Do you have interesting idea, thought, vision to building app?
         </h5>
         <small>
           Looking for an experienced full-stack developer to build your web / mobile / desktop
